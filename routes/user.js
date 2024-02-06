@@ -95,7 +95,8 @@ router.post("/signin",async(req,res)=>{
             res.json({
                 token: token,
                 "firstName" : user.firstName,
-                "balance" : account.balance
+                "balance" : account.balance,
+                "username" : user.username,
             })
         return;
         }
